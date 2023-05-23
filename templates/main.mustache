@@ -1,0 +1,18 @@
+{{!
+    @template block_ehs/main
+    This template renders the main content area for the ehs block.
+}}
+
+<div id="block-ehs" class="block-cards" data-region="ehs-learning"
+        data-displaycourse="{{displaycourse}}">
+    <div class="container-fluid">
+
+    </div>
+</div>
+
+
+{{#js}}
+    require(['block_ehs/main'], function(Main) {
+        Main.init('#block-ehs');
+    });
+{{/js}}
